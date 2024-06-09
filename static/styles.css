@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto for a modern look */
+    background-color: #f3e5f5; /* Light pink background */
+    color: #4a148c; /* Darker text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #880e4f; /* Dark pink background */
+    padding: 20px 0; /* Increased padding for better spacing */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff; /* White text color */
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffc107; /* Yellow hover color */
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #ad1457; /* Dark pink background for header and footer */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+footer {
+    font-size: 0.8em; /* Smaller font size for footer */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1, h2 {
+    margin: 0;
+    font-size: 2em; /* Larger font size for headings */
+    color: #ff4081; /* Pink accent color for headings */
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/* Upload Container Styles */
+.upload-container {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    max-width: 600px; /* Increased max-width for larger screens */
+    margin: 20px auto;
+}
+
+/* Form Input Styles */
+input[type="file"] {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #ff4081; /* Pink accent border color */
+    border-radius: 5px; /* Slightly rounded border */
+    background-color: #f3e5f5; /* Light pink background */
+    color: #4a148c; /* Dark text color */
+    width: 100%; /* Full width for input */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+button {
+    background-color: #e91e63; /* Darker pink background for button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 15px 30px; /* Larger padding for button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker hover color */
+}
+
+/* Result Display Styles */
+#result {
+    color: #ff4081; /* Pink text color */
+    font-weight: bold;
+}
+
+/* Spinner Animation Styles */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #ffeb3b; /* Yellow spinner color */
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Explanation Section Styles */
+#explanation {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+#explanation p {
+    color: #333;
+    line-height: 1.6;
+}
+
+#explanation strong {
+    color: #e91e63; /* Dark pink color */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .upload-container {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Slightly smaller font size for headings */
+    }
+}
